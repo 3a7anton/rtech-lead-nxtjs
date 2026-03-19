@@ -61,10 +61,7 @@ export default function ServicesPage() {
                   <s.icon size={26} color={s.color} />
                 </div>
                 <h2 style={{ fontFamily: 'var(--font-syne)', fontWeight: 700, fontSize: '1.25rem', color: '#0F0E2A', marginBottom: '12px' }}>{s.title}</h2>
-                <p style={{ fontFamily: 'var(--font-inter)', fontSize: '0.9375rem', color: '#6B6B80', lineHeight: 1.75, marginBottom: '24px' }}>{s.description}</p>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: s.color, fontSize: '0.875rem', fontWeight: 700, fontFamily: 'var(--font-inter)' }}>
-                  Learn more <ArrowRight size={14} />
-                </span>
+                <p style={{ fontFamily: 'var(--font-inter)', fontSize: '0.9375rem', color: '#6B6B80', lineHeight: 1.75, marginBottom: 0 }}>{s.description}</p>
               </Link>
             ))}
           </div>

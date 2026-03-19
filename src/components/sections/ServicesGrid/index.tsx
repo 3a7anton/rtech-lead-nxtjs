@@ -140,31 +140,11 @@ function ServiceCard({
             fontSize: '0.9375rem',
             color: '#6B6B80',
             lineHeight: 1.7,
-            marginBottom: '20px',
+            marginBottom: 0,
           }}
         >
           {description}
         </p>
-        <span
-          style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '4px',
-            color: color,
-            fontSize: '0.875rem',
-            fontWeight: 600,
-            fontFamily: 'var(--font-inter)',
-          }}
-        >
-          Learn more
-          <ArrowRight
-            size={14}
-            style={{
-              transform: hovered ? 'translateX(4px)' : 'translateX(0)',
-              transition: 'transform 0.15s',
-            }}
-          />
-        </span>
       </Link>
     </div>
   )

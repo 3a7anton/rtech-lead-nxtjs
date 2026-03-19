@@ -1,5 +1,6 @@
 import NavigationBar from '@/components/layout/NavigationBar'
 import Footer from '@/components/layout/Footer'
+import ClientWebsitesSlider from '@/components/sections/ClientWebsitesSlider'
 import Link from 'next/link'
 import { ArrowRight, TrendingUp } from 'lucide-react'
 import type { Metadata } from 'next'
@@ -10,12 +11,12 @@ export const metadata: Metadata = {
 }
 
 const cases = [
-  { industry: 'E-Commerce', client: 'RetailBD', headline: '312% increase in organic traffic in 90 days', desc: 'Complete digital overhaul — new website, SEO strategy, and paid media. Ranked #1 for "online store Bangladesh" within 3 months — up from position 58.', tags: ['Digital Marketing', 'SEO', 'Website Development'], metric: '312%', metricLabel: 'Traffic Growth', accent: '#E63946' },
-  { industry: 'Tech Startup', client: 'AppVenture', headline: 'Fully functional mobile app delivered in 6 weeks', desc: 'iOS and Android app built from zero to launch — 2 weeks ahead of schedule. 4.8★ average user rating on first release week.', tags: ['Mobile App Development', 'Software Development'], metric: '6 wks', metricLabel: 'Time to Market', accent: '#1D9E75' },
-  { industry: 'FMCG', client: 'BrandPulse', headline: '280% ROI on influencer campaign in 30 days', desc: 'Multi-channel influencer strategy. 4.2 million impressions, 180K new brand followers, 280% return on campaign investment.', tags: ['Influencer Marketing', 'Digital Marketing'], metric: '280%', metricLabel: 'Campaign ROI', accent: '#F4A261' },
-  { industry: 'Corporate', client: 'TechNova', headline: 'Brand identity + videography delivered in 3 weeks', desc: 'Full rebrand including logo, brand guidelines, and a 3-minute corporate video — produced and delivered within 21 days.', tags: ['Graphic & Animation', 'Videography'], metric: '21 days', metricLabel: 'Delivery Time', accent: '#9B5DE5' },
-  { industry: 'Events', client: 'EventPro BD', headline: '2,000 attendees. 200K social impressions. Zero logistics failures.', desc: 'End-to-end event activation for a national brand launch. Stage design, technical production, influencer seeding, and real-time social amplification.', tags: ['Event Activation', 'Influencer Marketing'], metric: '200K', metricLabel: 'Social Reach', accent: '#378ADD' },
-  { industry: 'Healthcare', client: 'MedConnect', headline: 'Custom software cut admin time by 60%', desc: 'Practice management system with patient records, appointment scheduling, and billing — built from scratch and deployed in 10 weeks.', tags: ['Software Development'], metric: '60%', metricLabel: 'Time Saved', accent: '#E63946' },
+  { industry: 'E-Commerce', client: 'Belladona by Farin', headline: '92% increase in organic traffic in 90 days', desc: 'Complete digital overhaul — new website, SEO strategy, and paid media. Ranked #1 for "online store Bangladesh" within 3 months — up from position 58.', tags: ['Digital Marketing', 'SEO', 'Website Development'], metric: '92%', metricLabel: 'Traffic Growth', accent: '#E63946' },
+  { industry: 'Tech Startup', client: 'BiggSteppers', headline: 'Fully functional mobile app delivered in 6 weeks', desc: 'iOS and Android app built from zero to launch — 2 weeks ahead of schedule. 4.8★ average user rating on first release week.', tags: ['Mobile App Development', 'Software Development'], metric: '6 wks', metricLabel: 'Time to Market', accent: '#1D9E75' },
+  { industry: 'FMCG', client: 'Maze Fragrance', headline: '80% ROI on influencer campaign in 30 days', desc: 'Multi-channel influencer strategy. 4.2 million impressions, 180K new brand followers, 280% return on campaign investment.', tags: ['Influencer Marketing', 'Digital Marketing'], metric: '80%', metricLabel: 'Campaign ROI', accent: '#F4A261' },
+  { industry: 'Corporate', client: 'Krishi Bondhu BD', headline: 'Brand identity + videography delivered in 3 weeks', desc: 'Full rebrand including logo, brand guidelines, and a 3-minute corporate video — produced and delivered within 21 days.', tags: ['Graphic & Animation', 'Videography'], metric: '21 days', metricLabel: 'Delivery Time', accent: '#9B5DE5' },
+  { industry: 'Events', client: 'Nishonkoch Foundation', headline: '2,000 attendees. 200K social impressions. Zero logistics failures.', desc: 'End-to-end event activation for a national brand launch. Stage design, technical production, influencer seeding, and real-time social amplification.', tags: ['Event Activation', 'Influencer Marketing'], metric: '200K', metricLabel: 'Social Reach', accent: '#378ADD' },
+  { industry: 'Healthcare', client: 'Diabuddy', headline: 'Custom software cut admin time by 60%', desc: 'Practice management system with patient records, appointment scheduling, and billing — built from scratch and deployed in 10 weeks.', tags: ['Software Development'], metric: '60%', metricLabel: 'Time Saved', accent: '#E63946' },
 ]
 
 export default function CaseStudiesPage() {
@@ -72,6 +73,9 @@ export default function CaseStudiesPage() {
             ))}
           </div>
         </section>
+
+        {/* Client Websites Slider */}
+        <ClientWebsitesSlider />
 
         {/* CTA */}
         <section style={{ background: '#0F0E2A', padding: '80px 24px', textAlign: 'center' }}>
