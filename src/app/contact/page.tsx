@@ -62,7 +62,7 @@ export default function ContactPage() {
     width: '100%',
     height: '52px',
     background: '#fff',
-    border: `1px solid ${errors[field] ? '#E63946' : 'rgba(0,0,0,0.12)'}`,
+    border: `1px solid ${errors[field] ? '#9f29ff' : 'rgba(0,0,0,0.12)'}`,
     borderRadius: '8px',
     padding: '0 16px',
     fontSize: '1rem',
@@ -87,7 +87,7 @@ export default function ContactPage() {
         >
           <div aria-hidden="true" style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 60% 60% at 80% 50%, rgba(230,57,70,0.1) 0%, transparent 70%)', pointerEvents: 'none' }} />
           <div style={{ maxWidth: '1280px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
-            <div style={{ color: '#E63946', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: 'var(--font-inter)', marginBottom: '16px' }}>
+            <div style={{ color: '#9f29ff', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: 'var(--font-inter)', marginBottom: '16px' }}>
               Get In Touch
             </div>
             <h1
@@ -102,7 +102,7 @@ export default function ContactPage() {
               }}
             >
               Let&apos;s build something<br />
-              <span style={{ background: 'linear-gradient(135deg, #E63946, #F4A261)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{ background: 'linear-gradient(135deg, #9f29ff, #F4A261)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 remarkable together.
               </span>
             </h1>
@@ -144,7 +144,7 @@ export default function ContactPage() {
                   </p>
                   <Link
                     href="/"
-                    style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#E63946', color: '#fff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, fontFamily: 'var(--font-inter)' }}
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#9f29ff', color: '#fff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, fontFamily: 'var(--font-inter)' }}
                   >
                     Back to home <ArrowRight size={16} />
                   </Link>
@@ -170,10 +170,10 @@ export default function ContactPage() {
                         placeholder="Your name"
                         aria-describedby={errors.name ? 'name-error' : undefined}
                         aria-invalid={!!errors.name}
-                        onFocus={e => (e.target.style.borderColor = '#E63946')}
-                        onBlur={e => (e.target.style.borderColor = errors.name ? '#E63946' : 'rgba(0,0,0,0.12)')}
+                        onFocus={e => (e.target.style.borderColor = '#9f29ff')}
+                        onBlur={e => (e.target.style.borderColor = errors.name ? '#9f29ff' : 'rgba(0,0,0,0.12)')}
                       />
-                      {errors.name && <p id="name-error" role="alert" style={{ color: '#E63946', fontSize: '0.8125rem', marginTop: '4px', fontFamily: 'var(--font-inter)' }}>{errors.name}</p>}
+                      {errors.name && <p id="name-error" role="alert" style={{ color: '#9f29ff', fontSize: '0.8125rem', marginTop: '4px', fontFamily: 'var(--font-inter)' }}>{errors.name}</p>}
                     </div>
                     <div>
                       <label htmlFor="contact-email" style={{ display: 'block', fontSize: '0.875rem', fontWeight: 600, color: '#2D2D3A', marginBottom: '6px', fontFamily: 'var(--font-inter)' }}>
@@ -188,10 +188,10 @@ export default function ContactPage() {
                         placeholder="you@company.com"
                         aria-describedby={errors.email ? 'email-error' : undefined}
                         aria-invalid={!!errors.email}
-                        onFocus={e => (e.target.style.borderColor = '#E63946')}
-                        onBlur={e => (e.target.style.borderColor = errors.email ? '#E63946' : 'rgba(0,0,0,0.12)')}
+                        onFocus={e => (e.target.style.borderColor = '#9f29ff')}
+                        onBlur={e => (e.target.style.borderColor = errors.email ? '#9f29ff' : 'rgba(0,0,0,0.12)')}
                       />
-                      {errors.email && <p id="email-error" role="alert" style={{ color: '#E63946', fontSize: '0.8125rem', marginTop: '4px', fontFamily: 'var(--font-inter)' }}>{errors.email}</p>}
+                      {errors.email && <p id="email-error" role="alert" style={{ color: '#9f29ff', fontSize: '0.8125rem', marginTop: '4px', fontFamily: 'var(--font-inter)' }}>{errors.email}</p>}
                     </div>
                   </div>
 
@@ -207,7 +207,7 @@ export default function ContactPage() {
                       onChange={e => setFormData({ ...formData, phone: e.target.value })}
                       style={inputStyle('phone')}
                       placeholder="+880 ..."
-                      onFocus={e => (e.target.style.borderColor = '#E63946')}
+                      onFocus={e => (e.target.style.borderColor = '#9f29ff')}
                       onBlur={e => (e.target.style.borderColor = 'rgba(0,0,0,0.12)')}
                     />
                   </div>
@@ -224,13 +224,13 @@ export default function ContactPage() {
                       style={{ ...inputStyle('service'), cursor: 'pointer' }}
                       aria-describedby={errors.service ? 'service-error' : undefined}
                       aria-invalid={!!errors.service}
-                      onFocus={e => (e.target.style.borderColor = '#E63946')}
-                      onBlur={e => (e.target.style.borderColor = errors.service ? '#E63946' : 'rgba(0,0,0,0.12)')}
+                      onFocus={e => (e.target.style.borderColor = '#9f29ff')}
+                      onBlur={e => (e.target.style.borderColor = errors.service ? '#9f29ff' : 'rgba(0,0,0,0.12)')}
                     >
                       <option value="">Select a service...</option>
                       {serviceOptions.map(s => <option key={s} value={s}>{s}</option>)}
                     </select>
-                    {errors.service && <p id="service-error" role="alert" style={{ color: '#E63946', fontSize: '0.8125rem', marginTop: '4px', fontFamily: 'var(--font-inter)' }}>{errors.service}</p>}
+                    {errors.service && <p id="service-error" role="alert" style={{ color: '#9f29ff', fontSize: '0.8125rem', marginTop: '4px', fontFamily: 'var(--font-inter)' }}>{errors.service}</p>}
                   </div>
 
                   {/* Budget */}
@@ -243,7 +243,7 @@ export default function ContactPage() {
                       value={formData.budget}
                       onChange={e => setFormData({ ...formData, budget: e.target.value })}
                       style={{ ...inputStyle('budget'), cursor: 'pointer' }}
-                      onFocus={e => (e.target.style.borderColor = '#E63946')}
+                      onFocus={e => (e.target.style.borderColor = '#9f29ff')}
                       onBlur={e => (e.target.style.borderColor = 'rgba(0,0,0,0.12)')}
                     >
                       <option value="">Select budget range...</option>
@@ -268,7 +268,7 @@ export default function ContactPage() {
                       style={{
                         width: '100%',
                         background: '#fff',
-                        border: `1px solid ${errors.message ? '#E63946' : 'rgba(0,0,0,0.12)'}`,
+                        border: `1px solid ${errors.message ? '#9f29ff' : 'rgba(0,0,0,0.12)'}`,
                         borderRadius: '8px',
                         padding: '12px 16px',
                         fontSize: '1rem',
@@ -281,14 +281,14 @@ export default function ContactPage() {
                       placeholder="Tell us about your project, goals, and any timeline requirements..."
                       aria-describedby={errors.message ? 'message-error' : undefined}
                       aria-invalid={!!errors.message}
-                      onFocus={e => (e.target.style.borderColor = '#E63946')}
-                      onBlur={e => (e.target.style.borderColor = errors.message ? '#E63946' : 'rgba(0,0,0,0.12)')}
+                      onFocus={e => (e.target.style.borderColor = '#9f29ff')}
+                      onBlur={e => (e.target.style.borderColor = errors.message ? '#9f29ff' : 'rgba(0,0,0,0.12)')}
                     />
-                    {errors.message && <p id="message-error" role="alert" style={{ color: '#E63946', fontSize: '0.8125rem', marginTop: '4px', fontFamily: 'var(--font-inter)' }}>{errors.message}</p>}
+                    {errors.message && <p id="message-error" role="alert" style={{ color: '#9f29ff', fontSize: '0.8125rem', marginTop: '4px', fontFamily: 'var(--font-inter)' }}>{errors.message}</p>}
                   </div>
 
                   {apiError && (
-                    <p role="alert" style={{ background: 'rgba(230,57,70,0.08)', border: '1px solid rgba(230,57,70,0.3)', borderRadius: '8px', padding: '12px 16px', color: '#E63946', fontSize: '0.9375rem', fontFamily: 'var(--font-inter)', marginBottom: '16px' }}>
+                    <p role="alert" style={{ background: 'rgba(230,57,70,0.08)', border: '1px solid rgba(230,57,70,0.3)', borderRadius: '8px', padding: '12px 16px', color: '#9f29ff', fontSize: '0.9375rem', fontFamily: 'var(--font-inter)', marginBottom: '16px' }}>
                       {apiError}
                     </p>
                   )}
@@ -299,7 +299,7 @@ export default function ContactPage() {
                     style={{
                       width: '100%',
                       height: '56px',
-                      background: loading ? '#6B6B80' : '#E63946',
+                      background: loading ? '#6B6B80' : '#9f29ff',
                       color: '#fff',
                       border: 'none',
                       borderRadius: '8px',
@@ -314,7 +314,7 @@ export default function ContactPage() {
                       transition: 'background 0.15s, transform 0.15s',
                     }}
                     onMouseEnter={e => { if (!loading) e.currentTarget.style.background = '#c62d39' }}
-                    onMouseLeave={e => { if (!loading) e.currentTarget.style.background = '#E63946' }}
+                    onMouseLeave={e => { if (!loading) e.currentTarget.style.background = '#9f29ff' }}
                   >
                     {loading ? 'Sending...' : <>Send brief <ArrowRight size={18} /></>}
                   </button>
@@ -342,7 +342,7 @@ export default function ContactPage() {
               ].map(({ icon: Icon, label, value, href }) => (
                 <div key={label} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
                   <div style={{ width: '44px', height: '44px', borderRadius: '10px', background: 'rgba(230,57,70,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                    <Icon size={20} color="#E63946" />
+                    <Icon size={20} color="#9f29ff" />
                   </div>
                   <div>
                     <div style={{ fontFamily: 'var(--font-inter)', fontSize: '0.8125rem', color: '#6B6B80', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '2px' }}>{label}</div>
@@ -367,7 +367,7 @@ export default function ContactPage() {
                   'Weekly progress reports with live dashboards',
                 ].map(item => (
                   <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', marginBottom: '12px' }}>
-                    <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#E63946', marginTop: '8px', flexShrink: 0 }} />
+                    <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#9f29ff', marginTop: '8px', flexShrink: 0 }} />
                     <span style={{ fontFamily: 'var(--font-inter)', fontSize: '0.9375rem', color: 'rgba(237,236,234,0.75)' }}>{item}</span>
                   </div>
                 ))}

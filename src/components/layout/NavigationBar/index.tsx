@@ -116,7 +116,7 @@ export default function NavigationBar() {
               href="/contact"
               id="nav-cta"
               style={{
-                background: '#E63946',
+                background: '#9f29ff',
                 color: '#fff',
                 padding: '10px 24px',
                 borderRadius: '8px',
@@ -129,11 +129,11 @@ export default function NavigationBar() {
               }}
               onMouseEnter={e => {
                 e.currentTarget.style.transform = 'scale(1.03)'
-                e.currentTarget.style.background = '#c62d39'
+                e.currentTarget.style.background = '#7a1fd9'
               }}
               onMouseLeave={e => {
                 e.currentTarget.style.transform = 'scale(1)'
-                e.currentTarget.style.background = '#E63946'
+                e.currentTarget.style.background = '#9f29ff'
               }}
             >
               Contact Us
@@ -206,7 +206,7 @@ export default function NavigationBar() {
                   onClick={() => setMobileOpen(false)}
                   style={{
                     display: 'inline-block',
-                    background: '#E63946',
+                    background: '#9f29ff',
                     color: '#fff',
                     padding: '14px 32px',
                     borderRadius: '8px',

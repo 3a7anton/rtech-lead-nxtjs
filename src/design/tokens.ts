@@ -4,7 +4,7 @@ export const tokens = {
   colors: {
     brand: {
       primary:    '#0F0E2A',  // Deep navy
-      accent:     '#E63946',  // Kinetic red
+      accent:     '#9f29ff',  // Purple
       accentWarm: '#F4A261',  // Warm amber
       accentCool: '#1D9E75',  // Teal
     },
@@ -22,7 +22,7 @@ export const tokens = {
     semantic: {
       success: '#1D9E75',
       warning: '#F4A261',
-      error:   '#E63946',
+      error:   '#9f29ff',
       info:    '#378ADD',
     },
   },

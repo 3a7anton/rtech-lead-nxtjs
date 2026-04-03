@@ -86,7 +86,7 @@ export default function TestimonialsCarousel() {
             transition: 'opacity 0.6s ease, transform 0.6s ease',
           }}
         >
-          <div style={{ color: '#E63946', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: 'var(--font-inter)', marginBottom: '12px' }}>
+          <div style={{ color: '#9f29ff', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: 'var(--font-inter)', marginBottom: '12px' }}>
             Client Voices
           </div>
           <h2
@@ -158,7 +158,7 @@ export default function TestimonialsCarousel() {
                       width: '48px',
                       height: '48px',
                       borderRadius: '50%',
-                      background: 'linear-gradient(135deg, #E63946, #F4A261)',
+                      background: 'linear-gradient(135deg, #9f29ff, #F4A261)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -201,7 +201,7 @@ export default function TestimonialsCarousel() {
                 cursor: 'pointer',
                 transition: 'background 0.15s, border-color 0.15s',
               }}
-              onMouseEnter={e => { e.currentTarget.style.background = '#E63946'; e.currentTarget.querySelector('svg')!.style.color = '#fff' }}
+              onMouseEnter={e => { e.currentTarget.style.background = '#9f29ff'; e.currentTarget.querySelector('svg')!.style.color = '#fff' }}
               onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.querySelector('svg')!.style.color = '' }}
             >
               <ChevronLeft size={20} />
@@ -218,7 +218,7 @@ export default function TestimonialsCarousel() {
                     width: i === current ? '24px' : '8px',
                     height: '8px',
                     borderRadius: '4px',
-                    background: i === current ? '#E63946' : 'rgba(0,0,0,0.2)',
+                    background: i === current ? '#9f29ff' : 'rgba(0,0,0,0.2)',
                     border: 'none',
                     cursor: 'pointer',
                     transition: 'width 0.3s ease, background 0.2s',
@@ -243,7 +243,7 @@ export default function TestimonialsCarousel() {
                 cursor: 'pointer',
                 transition: 'background 0.15s',
               }}
-              onMouseEnter={e => { e.currentTarget.style.background = '#E63946'; e.currentTarget.querySelector('svg')!.style.color = '#fff' }}
+              onMouseEnter={e => { e.currentTarget.style.background = '#9f29ff'; e.currentTarget.querySelector('svg')!.style.color = '#fff' }}
               onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.querySelector('svg')!.style.color = '' }}
             >
               <ChevronRight size={20} />

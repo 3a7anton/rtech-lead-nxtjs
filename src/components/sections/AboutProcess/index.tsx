@@ -3,6 +3,8 @@
 import { useRef, useEffect, useState } from 'react'
 import { Search, Lightbulb, Rocket, BarChart2 } from 'lucide-react'
 
+import Radar from '@/components/Radar'
+
 const steps = [
   {
     number: '01',
@@ -54,6 +56,27 @@ export default function AboutProcess() {
         overflow: 'hidden',
       }}
     >
+      {/* Radar background */}
+      <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+        <Radar
+          speed={0.6}
+          scale={0.7}
+          ringCount={10}
+          spokeCount={10}
+          ringThickness={0.04}
+          spokeThickness={0.008}
+          sweepSpeed={0.6}
+          sweepWidth={2}
+          sweepLobes={1}
+          color="#9f29ff"
+          backgroundColor="#000000"
+          falloff={2}
+          brightness={0.5}
+          enableMouseInteraction={false}
+          mouseInfluence={0.05}
+        />
+      </div>
+
       {/* Decorative gradient */}
       <div
         aria-hidden="true"
@@ -69,7 +92,7 @@ export default function AboutProcess() {
         }}
       />
 
-      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px' }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>
         {/* Header */}
         <div
           ref={headerRef}
@@ -83,7 +106,7 @@ export default function AboutProcess() {
         >
           <div
             style={{
-              color: '#E63946',
+              color: '#9f29ff',
               fontSize: '0.75rem',
               fontWeight: 600,
               letterSpacing: '0.12em',
@@ -162,7 +185,7 @@ function ProcessStep({
         background: hovered ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.025)',
         borderRadius: '16px',
         padding: '36px 32px',
-        border: `1px solid ${hovered ? 'rgba(230,57,70,0.3)' : 'rgba(255,255,255,0.06)'}`,
+        border: `1px solid ${hovered ? 'rgba(159,41,255,0.7)' : 'rgba(159,41,255,0.15)'}`,
         transition: 'background 0.2s, border-color 0.2s, transform 0.2s, opacity 0.6s ease',
         transform: visible ? (hovered ? 'translateY(-4px)' : 'translateY(0)') : 'translateY(32px)',
         opacity: visible ? 1 : 0,
@@ -176,7 +199,7 @@ function ProcessStep({
           fontFamily: 'var(--font-syne)',
           fontWeight: 800,
           fontSize: '3.5rem',
-          color: 'rgba(230,57,70,0.15)',
+          color: 'rgba(159,41,255,0.5)',
           lineHeight: 1,
           marginBottom: '20px',
           letterSpacing: '-0.03em',
@@ -191,14 +214,14 @@ function ProcessStep({
           width: '48px',
           height: '48px',
           borderRadius: '10px',
-          background: 'rgba(230,57,70,0.12)',
+          background: 'rgba(159,41,255,0.3)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           marginBottom: '20px',
         }}
       >
-        <Icon size={22} color="#E63946" />
+        <Icon size={22} color="#9f29ff" />
       </div>
 
       <h3
