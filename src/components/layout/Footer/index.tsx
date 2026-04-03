@@ -4,8 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Facebook, Instagram, Linkedin, Twitter, MessageCircle } from 'lucide-react'
 
-import Radar from '@/components/Radar'
-
 const services = [
   { label: 'Website Development', href: '/services/website-development' },
   { label: 'Software Development', href: '/services/software-development' },
@@ -39,31 +37,9 @@ export default function Footer() {
         borderTop: '1px solid rgba(255,255,255,0.06)',
         color: 'rgba(173,173,190,0.8)',
         fontFamily: 'var(--font-inter)',
-        position: 'relative',
       }}
     >
-      {/* Radar background */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-        <Radar
-          speed={0.4}
-          scale={0.8}
-          ringCount={8}
-          spokeCount={8}
-          ringThickness={0.03}
-          spokeThickness={0.005}
-          sweepSpeed={0.4}
-          sweepWidth={2}
-          sweepLobes={1}
-          color="#9f29ff"
-          backgroundColor="#000000"
-          falloff={2}
-          brightness={0.4}
-          enableMouseInteraction={false}
-          mouseInfluence={0.05}
-        />
-      </div>
-
-      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '80px 24px 0', position: 'relative', zIndex: 1 }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '80px 24px 0' }}>
         <div
           style={{
             display: 'grid',

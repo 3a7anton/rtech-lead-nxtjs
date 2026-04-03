@@ -4,8 +4,6 @@ import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { ArrowRight, ChevronDown } from 'lucide-react'
 
-import Radar from '@/components/Radar'
-
 const words = ['dominate', 'grow', 'convert', 'scale']
 
 export default function HeroSection() {
@@ -51,27 +49,6 @@ export default function HeroSection() {
         padding: '120px 24px 80px',
       }}
     >
-      {/* Radar background */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-        <Radar
-          speed={1}
-          scale={0.5}
-          ringCount={10}
-          spokeCount={10}
-          ringThickness={0.05}
-          spokeThickness={0.01}
-          sweepSpeed={1}
-          sweepWidth={2}
-          sweepLobes={1}
-          color="#9f29ff"
-          backgroundColor="#000000"
-          falloff={2}
-          brightness={1}
-          enableMouseInteraction
-          mouseInfluence={0.1}
-        />
-      </div>
-
       {/* Animated background */}
       <div
         aria-hidden="true"
@@ -112,8 +89,8 @@ export default function HeroSection() {
             display: 'inline-flex',
             alignItems: 'center',
             gap: '8px',
-            background: 'rgba(159,41,255,0.12)',
-            border: '1px solid rgba(159,41,255,0.3)',
+            background: 'rgba(230,57,70,0.12)',
+            border: '1px solid rgba(230,57,70,0.3)',
             borderRadius: '100px',
             padding: '6px 18px',
             marginBottom: '32px',
@@ -127,14 +104,14 @@ export default function HeroSection() {
               width: '6px',
               height: '6px',
               borderRadius: '50%',
-              background: '#9f29ff',
+              background: '#E63946',
               display: 'inline-block',
               animation: 'pulse 2s ease-in-out infinite',
             }}
           />
           <span
             style={{
-              color: '#9f29ff',
+              color: '#E63946',
               fontSize: '0.8125rem',
               fontWeight: 600,
               letterSpacing: '0.1em',
@@ -164,7 +141,7 @@ export default function HeroSection() {
           brand needs to{' '}
           <span
             style={{
-              background: 'linear-gradient(135deg, #9f29ff, #F4A261)',
+              background: 'linear-gradient(135deg, #E63946, #F4A261)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
@@ -217,7 +194,7 @@ export default function HeroSection() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '8px',
-              background: '#9f29ff',
+              background: '#E63946',
               color: '#fff',
               padding: '0 32px',
               height: '56px',
@@ -230,11 +207,11 @@ export default function HeroSection() {
             }}
             onMouseEnter={e => {
               e.currentTarget.style.transform = 'scale(1.03)'
-              e.currentTarget.style.background = '#7a1fd9'
+              e.currentTarget.style.background = '#c62d39'
             }}
             onMouseLeave={e => {
               e.currentTarget.style.transform = 'scale(1)'
-              e.currentTarget.style.background = '#9f29ff'
+              e.currentTarget.style.background = '#E63946'
             }}
           >
             Start a project
@@ -298,7 +275,7 @@ export default function HeroSection() {
                   fontFamily: 'var(--font-syne)',
                   fontWeight: 800,
                   fontSize: '2rem',
-                  color: '#9f29ff',
+                  color: '#E63946',
                   lineHeight: 1,
                 }}
               >

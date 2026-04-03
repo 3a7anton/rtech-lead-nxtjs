@@ -4,8 +4,6 @@ import Link from 'next/link'
 import { useRef, useEffect, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
 
-import Radar from '@/components/Radar'
-
 export default function CtaBanner() {
   const [visible, setVisible] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
@@ -29,34 +27,13 @@ export default function CtaBanner() {
         overflow: 'hidden',
       }}
     >
-      {/* Radar background */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-        <Radar
-          speed={0.7}
-          scale={0.6}
-          ringCount={12}
-          spokeCount={12}
-          ringThickness={0.04}
-          spokeThickness={0.008}
-          sweepSpeed={0.7}
-          sweepWidth={2}
-          sweepLobes={1}
-          color="#9f29ff"
-          backgroundColor="#000000"
-          falloff={2}
-          brightness={0.6}
-          enableMouseInteraction={false}
-          mouseInfluence={0.05}
-        />
-      </div>
-
       {/* Gradient accent */}
       <div
         aria-hidden="true"
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'radial-gradient(ellipse 70% 60% at 50% 50%, rgba(159,41,255,0.12) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse 70% 60% at 50% 50%, rgba(230,57,70,0.12) 0%, transparent 70%)',
           pointerEvents: 'none',
         }}
       />
@@ -69,7 +46,7 @@ export default function CtaBanner() {
           padding: '0 24px',
           textAlign: 'center',
           position: 'relative',
-          zIndex: 2,
+          zIndex: 1,
           opacity: visible ? 1 : 0,
           transform: visible ? 'translateY(0)' : 'translateY(32px)',
           transition: 'opacity 0.7s ease, transform 0.7s ease',
@@ -78,7 +55,7 @@ export default function CtaBanner() {
         <div
           style={{
             display: 'inline-block',
-            color: '#9f29ff',
+            color: '#E63946',
             fontSize: '0.75rem',
             fontWeight: 600,
             letterSpacing: '0.12em',
@@ -102,7 +79,7 @@ export default function CtaBanner() {
           Your vision. Our eight superpowers.<br />
           <span
             style={{
-              background: 'linear-gradient(135deg, #9f29ff, #F4A261)',
+              background: 'linear-gradient(135deg, #E63946, #F4A261)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
@@ -134,7 +111,7 @@ export default function CtaBanner() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '8px',
-              background: '#9f29ff',
+              background: '#E63946',
               color: '#fff',
               padding: '0 36px',
               height: '56px',
@@ -147,11 +124,11 @@ export default function CtaBanner() {
             }}
             onMouseEnter={e => {
               e.currentTarget.style.transform = 'scale(1.03)'
-              e.currentTarget.style.background = '#7a1fd9'
+              e.currentTarget.style.background = '#c62d39'
             }}
             onMouseLeave={e => {
               e.currentTarget.style.transform = 'scale(1)'
-              e.currentTarget.style.background = '#9f29ff'
+              e.currentTarget.style.background = '#E63946'
             }}
           >
             Let's talk <ArrowRight size={18} />

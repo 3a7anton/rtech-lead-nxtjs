@@ -1,6 +1,5 @@
 import NavigationBar from '@/components/layout/NavigationBar'
 import Footer from '@/components/layout/Footer'
-import BlogHero from '@/components/sections/BlogHero'
 import Link from 'next/link'
 import { ArrowRight, Clock, Tag } from 'lucide-react'
 import type { Metadata } from 'next'
@@ -24,7 +23,18 @@ export default function BlogPage() {
     <>
       <NavigationBar />
       <main id="main-content">
-        <BlogHero />
+        {/* Header */}
+        <section style={{ background: '#0F0E2A', padding: '160px 24px 80px' }}>
+          <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+            <div style={{ color: '#E63946', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: 'var(--font-inter)', marginBottom: '16px' }}>Insights & Resources</div>
+            <h1 style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: '#fff', lineHeight: 1.1, marginBottom: '16px' }}>
+              From the RTech Lead desk.
+            </h1>
+            <p style={{ fontFamily: 'var(--font-inter)', fontSize: '1.125rem', color: 'rgba(237,236,234,0.65)', maxWidth: '520px', lineHeight: 1.7 }}>
+              Expert-led, data-cited content on digital marketing, development, design, and more — from the team that does the work.
+            </p>
+          </div>
+        </section>
 
         {/* Posts grid */}
         <section style={{ background: '#F8F7F4', padding: '80px 24px 120px' }}>

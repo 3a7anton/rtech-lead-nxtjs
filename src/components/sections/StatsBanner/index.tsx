@@ -2,8 +2,6 @@
 
 import { useRef, useEffect, useState } from 'react'
 
-import Radar from '@/components/Radar'
-
 const stats = [
   { value: 50, suffix: '+', label: 'Projects delivered', color: '#E63946' },
   { value: 8,  suffix: '',  label: 'Services under one roof', color: '#F4A261' },
@@ -94,30 +92,8 @@ export default function StatsBanner() {
         background: '#0F0E2A',
         borderTop: '1px solid rgba(255,255,255,0.06)',
         borderBottom: '1px solid rgba(255,255,255,0.06)',
-        position: 'relative',
       }}
     >
-      {/* Radar background */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-        <Radar
-          speed={0.8}
-          scale={0.6}
-          ringCount={12}
-          spokeCount={12}
-          ringThickness={0.04}
-          spokeThickness={0.008}
-          sweepSpeed={0.8}
-          sweepWidth={2}
-          sweepLobes={1}
-          color="#9f29ff"
-          backgroundColor="#000000"
-          falloff={2}
-          brightness={0.5}
-          enableMouseInteraction={false}
-          mouseInfluence={0.05}
-        />
-      </div>
-
       <div
         style={{
           maxWidth: '1280px',
@@ -126,8 +102,6 @@ export default function StatsBanner() {
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
           gap: '0',
-          position: 'relative',
-          zIndex: 1,
         }}
       >
         {stats.map((stat, i) => (
