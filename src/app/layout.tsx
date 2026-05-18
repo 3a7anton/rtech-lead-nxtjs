@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Syne, Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
+import ChatBot from '@/components/layout/ChatBot/ChatBot'
 
 const syne = Syne({
   subsets: ['latin'],
@@ -85,6 +86,7 @@ export default function RootLayout({
           Skip to main content
         </a>
         {children}
+        <ChatBot />
       </body>
     </html>
   )
